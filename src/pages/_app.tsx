@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === "enabled") {
-  require("../src/mocks");
+  require("../mocks");
 }
 
 const queryClient = new QueryClient();
